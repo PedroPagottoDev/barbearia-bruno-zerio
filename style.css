@@ -68,6 +68,28 @@ mark{background:none;color:var(--y)}
 .btn-ig{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:#fff;font-weight:700;font-size:.88rem;border-radius:50px;transition:all .25s}
 .btn-ig:hover{opacity:.88;transform:translateY(-3px)}
 .btn-ig.lg{padding:16px 38px;font-size:.95rem}
+
+/* BOTÃO AGENDAR ONLINE */
+.btn-ag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  background: var(--y);
+  color: #000;
+  font-weight: 700;
+  font-size: .88rem;
+  border-radius: 50px;
+  transition: all .25s;
+  box-shadow: 0 8px 28px rgba(245,197,24,.3);
+}
+.btn-ag:hover {
+  background: var(--y2);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(245,197,24,.5);
+}
+.btn-ag.lg { padding: 16px 38px; font-size: .95rem; }
+
 .h-stats{display:flex;align-items:center;gap:32px;animation:fadeUp .8s var(--ease) .55s both}
 .stat{display:flex;flex-direction:column;align-items:center;gap:2px}
 .sn{font-family:var(--fft);font-size:2.4rem;letter-spacing:2px;color:var(--y);line-height:1}
@@ -91,7 +113,7 @@ mark{background:none;color:var(--y)}
 .sec-svc{padding:100px 0;background:var(--bg2);position:relative}
 .sec-svc::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--y),transparent)}
 
-/* GRID DE SERVIÇOS — 4 fotos de corte */
+/* GRID DE SERVIÇOS */
 .svc-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -160,9 +182,7 @@ mark{background:none;color:var(--y)}
   line-height: 1.4;
 }
 
-/* ========================
-   PLANOS
-======================== */
+/* PLANOS */
 .sec-planos {
   padding: 100px 0;
   background: var(--bg);
@@ -219,7 +239,6 @@ mark{background:none;color:var(--y)}
 .u-btn{display:inline-flex;align-items:center;gap:8px;width:100%;justify-content:center;padding:13px 24px;background:var(--wa);color:#000;font-weight:700;font-size:.85rem;border-radius:10px;transition:all .25s}
 .u-btn:hover{background:#1fbe4a;transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4)}
 
-/* Cards de unidade com imagem de fundo */
 .u-grid .u-card:nth-child(1) {
   background-image:
     linear-gradient(rgba(14,14,14,0.82), rgba(14,14,14,0.82)),
@@ -275,9 +294,7 @@ mark{background:none;color:var(--y)}
 @keyframes bounce{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
 @keyframes wap{0%,100%{box-shadow:0 8px 28px rgba(37,211,102,.45)}50%{box-shadow:0 8px 44px rgba(37,211,102,.7),0 0 0 12px rgba(37,211,102,.08)}}
 
-/* ========================
-   RESPONSIVE
-======================== */
+/* RESPONSIVE */
 @media(max-width:1080px){
   .svc-grid{grid-template-columns:repeat(2,1fr)}
   .planos-grid{grid-template-columns:repeat(2,1fr)}
@@ -314,6 +331,8 @@ mark{background:none;color:var(--y)}
   }
   .planos-grid img:nth-child(5),
   .planos-grid img:nth-child(6){grid-column:auto}
+
+  .cta-btns{flex-direction:column;align-items:center}
 }
 
 @media(max-width:520px){
